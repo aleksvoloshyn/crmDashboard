@@ -1,0 +1,6 @@
+const activeMenu = require('./module/activeMenuItem.js')
+const searchCustomers = require('./module/searchCustomers.js')
+const activeClass = require('./module/activeClass.js')
+const showActiveInactive = require('./module/showActiveInactive.js')
+const pagination = require('./module/pagination.js')
+const mobileMenu = require('./module/mobileMenu.js')

@@ -1,0 +1,13 @@
+<div class="customers__data">
+  <ul class="customers__data-list list">
+    <li class="item customers__data-header">
+      <p class="customers__data-name">customer Name</p>
+      <p class="customers__data-company">company</p>
+      <p class="customers__data-phone">phone Number</p>
+      <p class="customers__data-email">email</p>
+      <p class="customers__data-country">country</p>
+      <p class="customers__data-status">status</p>
+    </li>
+    @@loop("customer.html", "../../data/list.json")
+  </ul>
+</div>

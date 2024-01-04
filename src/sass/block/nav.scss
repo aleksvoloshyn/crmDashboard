@@ -1,0 +1,114 @@
+.navigation {
+  // display: flex;
+  // flex-direction: column;
+  // flex-basis: 306px;
+  background: $nav-bgcolor;
+  box-shadow: $nav-shadow;
+  min-height: 100%;
+  // padding: 37px 28px 76px 28px;
+  padding: 51px 28px 76px 28px;
+  &__header {
+    display: flex;
+    // margin-bottom: 66px;
+    margin-bottom: 52px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  &__title {
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.26px;
+    margin-right: 4px;
+  }
+  &__version {
+    font-size: 11px;
+  }
+  &__logo {
+    margin-right: 8px;
+  }
+
+  &__list {
+    // margin-bottom: 597px;
+    margin-bottom: 586px;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    width: 250px;
+    height: 46px;
+
+    color: $nav-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.14px;
+    margin-bottom: 18px;
+    padding-left: 11px;
+    padding-right: 11px;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+
+    &:hover,
+    &:focus {
+      // background-color: $nav-active-bg;
+      outline: 1px dotted rgba($nav-active-bg, 0.3);
+    }
+    // &:hover .navigation__icon {
+    //   fill: $nav-inactive-bg;
+    // }
+    // &:hover .navigation__chevron {
+    //   stroke: $nav-inactive-bg;
+    // }
+    // &:hover .navico {
+    //   stroke: $nav-inactive-bg;
+    // }
+    // &:hover .navigation__text {
+    //   color: $nav-inactive-bg;
+    //   transition: color 0.6s ease;
+    // }
+  }
+
+  &__text {
+    margin-left: 14px;
+  }
+  &__icon {
+    fill: $nav-svg-color;
+  }
+
+  &__icon:hover use {
+    fill: $nav-inactive-bg;
+  }
+  &__footer {
+    display: flex;
+  }
+  img[src='./img/user-pic.png'] {
+    margin-right: 12px;
+  }
+  &__username {
+    color: nav-username-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+  }
+  &__userprof {
+    color: $nav-userprof-color;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+  }
+
+  &__chevron {
+    stroke: $nav-svg-color;
+    margin-left: auto;
+    margin-right: -4px;
+  }
+}
+
+.navico {
+  stroke: $nav-svg-color;
+}

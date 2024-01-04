@@ -1,0 +1,208 @@
+.board {
+  flex-grow: 1;
+  background: $board-bg;
+  // height: 100%;
+
+  // padding-top: 41px;
+  padding-top: 56px;
+  padding-right: 95px;
+  padding-left: 71px;
+  &__title {
+    color: $board-title-color;
+    font-size: $board-title-size;
+    font-weight: $board-title-weight;
+    // margin-bottom: 61px;
+    margin-bottom: 52px;
+  }
+}
+.customers,
+.product,
+.dashboard,
+.income,
+.promote,
+.help {
+  max-width: 968px;
+  // max-height: 812px;
+  padding: 30px 40px 40px 38px;
+  color: $board-content-color;
+  background-color: $board-content-bgcolor;
+  // border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: $board-content-shadow;
+}
+
+.customers {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    &-title {
+      color: $board-title-color;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.22px;
+      margin-bottom: 7px;
+      cursor: pointer;
+    }
+    &-text {
+      color: $board-active-text-color;
+      letter-spacing: -0.14px;
+      cursor: pointer;
+    }
+    &-searchbar {
+      position: relative;
+      margin-right: 9px;
+    }
+  }
+  &__data {
+    &-list {
+      margin-bottom: 32px;
+    }
+    &-header {
+      text-transform: capitalize;
+
+      border-bottom: 1px solid $board-border-color;
+      width: 968px;
+      margin-left: -40px;
+      padding-left: 40px;
+      padding-bottom: 14px;
+    }
+    &-item {
+      padding-top: 17px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $board-border-color;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      color: $board-header-color;
+      letter-spacing: -0.14px;
+    }
+    &-name {
+      width: 172px;
+    }
+    &-company {
+      width: 131px;
+    }
+    &-phone {
+      width: 158px;
+    }
+    &-email {
+      width: 199px;
+    }
+    &-country {
+      width: 152px;
+      padding-left: 8px;
+    }
+    &-status {
+      padding-left: 8px;
+      margin-left: -5px;
+      &--marked {
+        display: flex;
+        width: 80px;
+
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid $board-border-color;
+      }
+      &--active {
+        border: 1px solid $board-status-active-color;
+        color: $board-status-active-color;
+        background: $board-status-active-bgcolor;
+      }
+      &--inactive {
+        border: 1px solid $board-status-inactive-color;
+        color: $board-status-inactive-color;
+        background: $board-status-inactive-bgcolor;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      color: $board-content-color;
+      font-weight: 500;
+      letter-spacing: -0.14px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    &-pagination {
+      margin-right: -10px;
+      margin-top: -3px;
+    }
+    &-info {
+      color: $board-footer-info-text;
+      font-weight: 500;
+      letter-spacing: -0.14px;
+    }
+    &-list {
+      display: flex;
+    }
+    &-item {
+      width: 25px;
+      height: 24px;
+      display: inline-flex;
+      padding: 6px 9px;
+      margin-right: 12px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $board-footer-pagination-textcolor;
+      border-radius: 4px;
+      border: 1px solid $board-border-color;
+      background: $board-footer-pagination-bg;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.12px;
+      cursor: pointer;
+      &--active {
+        border: 1px solid $board-footer-pagination-bg-active;
+        background: $board-footer-pagination-bg-active;
+        color: $nav-inactive-bg;
+      }
+    }
+    &-dots {
+      margin-right: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
+.previous,
+.next {
+  &:active {
+    border: 1px solid $board-footer-pagination-bg-active;
+    background: $board-footer-pagination-bg-active;
+    color: $nav-inactive-bg;
+  }
+}
+
+.search-input {
+  width: 216px;
+  height: 38px;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 37px;
+  color: $board-input-color;
+  border-radius: 10px;
+  letter-spacing: -0.12px;
+  background: $board-bg;
+  outline: none;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 63%;
+  transform: translateY(-50%);
+  left: 5px;
+}
